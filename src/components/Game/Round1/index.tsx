@@ -3,6 +3,8 @@ import { Timer } from "./Timer";
 import { questions } from "@/data/round1.json";
 import { IconPlayerPlay } from "@tabler/icons-react";
 
+const duration = 2.5;
+
 export const Round1 = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   console.log("🚀 ~ Round1 ~ currentQuestionIndex:", currentQuestionIndex);
@@ -27,7 +29,7 @@ export const Round1 = () => {
 
     const timer = setTimeout(() => {
       setCurrentIndex((prev) => prev + 1);
-    }, 5000);
+    }, duration * 1000);
 
     return () => clearTimeout(timer);
   }, [currentIndex, hashtags.length, isAutoPlaying, isPaused]);
@@ -72,7 +74,9 @@ export const Round1 = () => {
               <div className="text-4xl font-bold text-center my-4 italic">
                 #{hashtags[currentIndex]}
               </div>
-              <Timer duration={5} key={currentIndex} paused={isPaused} />
+
+              <Timer duration={duration} key={currentIndex} paused={isPaused} />
+
               {currentIndex !== hashtags.length - 1 &&
                 !showResult &&
                 !isPaused && (
