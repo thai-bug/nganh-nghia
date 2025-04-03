@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Ephraim",
+    "slogan": "Thịnh vượng",
+    "points": 0,
+    "starOfHope": true
+  },
+  {
+    "name": "Giuda",
+    "slogan": "Tiên phong",
+    "points": 0,
+    "starOfHope": true
+  },
+  {
+    "name": "Benjamin",
+    "slogan": "Dũng cảm",
+    "points": 0,
+    "starOfHope": true
+  },
+  {
+    "name": "Semeon",
+    "slogan": "Công lý",
+    "points": 0,
+    "starOfHope": true
+  }
+]
