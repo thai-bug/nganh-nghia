@@ -2,6 +2,7 @@
 
 import Round3 from "@/components/Game/Round3";
 import Round3Info from "@/components/Game/Round3/info";
+import { SelectablePlayerState } from "@/states/player.state";
 import { RoundState } from "@/states/round.state";
 import { getRouteApi } from "@tanstack/react-router";
 import { useEffect } from "react";
@@ -12,6 +13,7 @@ const routeApi = getRouteApi("/round3");
 const Round3Page = () => {
   const queries: any = routeApi.useSearch();
   const setRound = useSetRecoilState(RoundState);
+  const setSelectablePlayer = useSetRecoilState(SelectablePlayerState);
 
   useEffect(() => {
     setRound({
@@ -19,6 +21,13 @@ const Round3Page = () => {
       name: "Sắp tới rồi! Sắp tới rồi!",
     });
   }, [setRound]);
+
+  useEffect(() => {
+    setSelectablePlayer(true);
+    return () => {
+      setSelectablePlayer(false);
+    };
+  }, [setSelectablePlayer]);
 
   if (queries?.game) {
     return <Round3 />;

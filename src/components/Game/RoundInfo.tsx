@@ -27,12 +27,14 @@ const RoundInfo = () => {
           Vòng đấu số {roundInfo?.round} - {roundInfo?.name}
         </div>
         <div>
-          <Link
-            to={`/round${roundInfo.round + 1}`}
-            className="text-sm flex gap-2 px-6 py-3 text-white font-bold bg-gray-300 rounded-xl hover:bg-gray-200 focus:outline-none focus:ring-opacity-50 transition-all duration-200 shadow-lg hover:shadow-xl no-underline "
-          >
-            <IconCaretRight />
-          </Link>
+          {roundInfo.round !== 3 && (
+            <Link
+              to={`/round${roundInfo.round + 1}`}
+              className="text-sm flex gap-2 px-6 py-3 text-white font-bold bg-gray-300 rounded-xl hover:bg-gray-200 focus:outline-none focus:ring-opacity-50 transition-all duration-200 shadow-lg hover:shadow-xl no-underline "
+            >
+              <IconCaretRight />
+            </Link>
+          )}
         </div>
       </div>
     </div>

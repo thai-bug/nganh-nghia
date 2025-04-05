@@ -1,14 +1,19 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { useRecoilState, useSetRecoilState } from "recoil";
+import { useRecoilState, useRecoilValue, useSetRecoilState } from "recoil";
 import initPlayersData from "@/data/players.json";
-import { PlayersState, SelectedPlayerState } from "@/states/player.state";
+import {
+  PlayersState,
+  SelectablePlayerState,
+  SelectedPlayerState,
+} from "@/states/player.state";
 import { useCallback, useEffect } from "react";
 import { cloneDeep } from "lodash";
 import { useDebounceCallback } from "usehooks-ts";
 import { IconRefresh } from "@tabler/icons-react";
 import { Divider, InputNumber } from "antd";
 
-export const Players = ({ currentRound, children }: any) => {
+export const Players = ({ children }: any) => {
+  const selectablePlayer = useRecoilValue(SelectablePlayerState);
   const setSelectedPlayer = useSetRecoilState(SelectedPlayerState);
 
   const [players, setPlayers] = useRecoilState(PlayersState);
@@ -59,7 +64,7 @@ export const Players = ({ currentRound, children }: any) => {
                 onClick={(e) => {
                   e.preventDefault();
                   e.stopPropagation();
-                  if (currentRound === "/round3") {
+                  if (selectablePlayer) {
                     setSelectedPlayer(player);
                   }
                 }}
@@ -108,7 +113,7 @@ export const Players = ({ currentRound, children }: any) => {
                 onClick={(e) => {
                   e.preventDefault();
                   e.stopPropagation();
-                  if (currentRound === "/round3") {
+                  if (selectablePlayer) {
                     setSelectedPlayer(player);
                   }
                 }}

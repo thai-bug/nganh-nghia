@@ -18,3 +18,8 @@ export const SelectedPlayerState = atom<any>({
   key: "selected-player-state",
   default: 0,
 });
+
+export const SelectablePlayerState = atom<any>({
+  key: "selectable-player-state",
+  default: false,
+});
