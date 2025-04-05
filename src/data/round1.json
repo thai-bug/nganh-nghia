@@ -103,5 +103,27 @@
       "result": "Chúa Giê-su",
       "image": "/hiendung.png"
     }
-  ]
+  ],
+  "info": {
+    "rules": [
+      "Có 6 câu hỏi trong vòng đấu",
+      "Mỗi câu hỏi trong vòng đấu có nội dung 'Là ai?'",
+
+      " Có 10 từ khóa liên quan đến nhân vật trong câu hỏi lần lượt xuất hiện.",
+      "Khi 1 từ khóa xuất hiện, có 2 giây tồn tại",
+
+      " Người chơi có thể nhanh tay trả lời giành lấy lá cờ để trả lời câu hỏi",
+
+      " Khi người chơi trả lời chính xác, đội người chơi sẽ được cộng điểm",
+
+      " Số lượng từ khóa xuất hiện càng nhiều, điểm của hỏi càng bị giảm.",
+
+      "  Khi người chơi trả lời sai, sẽ không còn quyền trả lời câu hỏi hiện tại",
+
+      "Nếu toàn bộ từ khóa không được trả lời, các thành viên phía dưới có thể giành quyền trả lời.",
+
+      "  Điểm của thành viên phía dưới trả lời sẽ phải chia đôi với điểm còn lại của câu hỏi"
+    ],
+    "name": "CHẮT CHILL HY VỌNG"
+  }
 }

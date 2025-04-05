@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import { info } from "@/data/round2.json";
 
 const Round1Info = () => {
   return (
@@ -10,7 +11,7 @@ const Round1Info = () => {
               Vòng đấu số 1
             </div>
             <div className="font-bold text-2xl text-blue-600 text-center ">
-              CHẮT CHILL - CHILL CHẮC
+              {info.name}
             </div>
           </div>
 
@@ -19,40 +20,9 @@ const Round1Info = () => {
               Luật vòng đấu:
             </div>
             <ol className="list-decimal list-inside gap-2 text-lg">
-              <li>Có 6 câu hỏi trong vòng đấu</li>
-              <li>
-                Mỗi câu hỏi trong vòng đấu có nội dung{" "}
-                <span className="font-semibold">"Là ai?"</span>
-              </li>
-              <li>
-                Có 10 từ khóa liên quan đến nhân vật trong câu hỏi lần lượt xuất
-                hiện.
-              </li>
-              <li>Khi 1 từ khóa xuất hiện, có 2 giây tồn tại</li>
-              <li>
-                Người chơi có thể nhanh tay trả lời giành lấy lá cờ để trả lời
-                câu hỏi
-              </li>
-              <li>
-                Khi người chơi trả lời chính xác, đội người chơi sẽ được cộng
-                điểm
-              </li>
-              <li>
-                Số lượng từ khóa xuất hiện càng nhiều, điểm của hỏi càng bị
-                giảm.
-              </li>
-              <li>
-                Khi người chơi trả lời sai, sẽ không còn quyền trả lời câu hỏi
-                hiện tại
-              </li>
-              <li>
-                Nếu toàn bộ từ khóa không được trả lời, các thành viên phía dưới
-                có thể giành quyền trả lời.
-              </li>
-              <li>
-                Điểm của thành viên phía dưới trả lời sẽ phải chia đôi với điểm
-                còn lại của câu hỏi
-              </li>
+              {info?.rules?.map((rule, index) => {
+                return <li key={index}>{rule}</li>;
+              })}
             </ol>
           </div>
         </div>
@@ -60,7 +30,6 @@ const Round1Info = () => {
         <div className="flex justify-center">
           <Link
             to="/round1"
-            // search={{ game: 1 }}
             search={{
               game: true,
             }}
