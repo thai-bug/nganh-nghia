@@ -61,18 +61,18 @@ export const Players = ({ children }: any) => {
               <div
                 key={index}
                 className="text-center grid gap-2 cursor-pointer"
-                onClick={(e) => {
-                  e.preventDefault();
-                  e.stopPropagation();
-                  if (selectablePlayer) {
-                    setSelectedPlayer(player);
-                  }
-                }}
               >
                 <div className="flex flex-col items-center gap-2 justify-center">
                   <img
                     src={player?.image}
                     className="rounded h-[33vh] object-cover"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      e.stopPropagation();
+                      if (selectablePlayer) {
+                        setSelectedPlayer(player);
+                      }
+                    }}
                   />
 
                   <div className="flex gap-2">
@@ -88,7 +88,11 @@ export const Players = ({ children }: any) => {
                     />
                     <button
                       className="cursor-pointer text-red-400"
-                      onClick={() => handleChangePoint(player.id, 0)}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        e.preventDefault();
+                        handleChangePoint(player.id, 0);
+                      }}
                     >
                       <IconRefresh />
                     </button>

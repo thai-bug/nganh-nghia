@@ -34,16 +34,18 @@ const QuestionPackages = [
 
 const Round3 = () => {
   const [isStarted, setIsStarted] = useState(false);
+  const [isSelectedStarOfHope, setIsSelectedStarOfHope] = useState(false);
 
   const [selectedPackage, setSelectedPackage] = useState<any>();
   const selectedPlayer = useRecoilValue(SelectedPlayerState);
+  const [currentQuestionGroupIndex, setCurrentQuestionGroupIndex] = useState(0);
 
   const [questionGroups, setQuestionGroups] =
     useState<any[]>(initQuestionGroups);
-  const [currentQuestionGroupIndex, setCurrentQuestionGroupIndex] = useState(0);
 
   const [questions, setQuestions] = useState<any[]>([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+
   const currentQuestion = useMemo(() => {
     return questions[currentQuestionIndex];
   }, [currentQuestionIndex, questions]);
@@ -56,14 +58,20 @@ const Round3 = () => {
     ].isAnswered = true;
 
     setQuestionGroups(tempQuestionGroups);
-    setCurrentQuestionIndex((prev) => prev + 1);
-  }, [currentQuestionGroupIndex, currentQuestionIndex, questionGroups]);
+    if (currentQuestionIndex !== questions.length - 1) {
+      setCurrentQuestionIndex((prev) => prev + 1);
+    }
+  }, [
+    currentQuestionGroupIndex,
+    currentQuestionIndex,
+    questionGroups,
+    questions.length,
+  ]);
 
   useEffect(() => {
     setQuestions(
       questionGroups[currentQuestionGroupIndex]?.initQuestions || []
     );
-    setCurrentQuestionIndex(0);
   }, [currentQuestionGroupIndex, questionGroups]);
 
   useEffect(() => {
@@ -74,10 +82,15 @@ const Round3 = () => {
     }
   }, [selectedPlayer]);
 
+  useEffect(() => {
+    setCurrentQuestionIndex(0);
+    setIsSelectedStarOfHope(false);
+  }, [currentQuestionGroupIndex]);
+
   return (
     <div className="">
       {!!selectedPlayer && (
-        <>
+        <div className="flex gap-2">
           <div className="flex my-5 gap-5">
             <Image src={selectedPlayer?.image} height={350} />
             <div>
@@ -100,7 +113,21 @@ const Round3 = () => {
               </div>
             </div>
           </div>
-        </>
+
+          <div
+            onClick={() => setIsSelectedStarOfHope(true)}
+            className={classNames(
+              "flex items-center justify-center cursor-pointer"
+            )}
+          >
+            <img
+              src="/star-of-hope.png"
+              className={classNames("w-60  rounded-full object-fill", {
+                "border-green-500 border-8": isSelectedStarOfHope,
+              })}
+            />
+          </div>
+        </div>
       )}
       <div className="flex justify-between ">
         <div className="grid gap-2 w-full">
@@ -117,7 +144,7 @@ const Round3 = () => {
             {isStarted && <Timer duration={selectedPackage?.time} />}
           </div>
 
-          {!!selectedPlayer && !!selectedPackage && (
+          {!!selectedPlayer && !!selectedPackage && !!isStarted && (
             <>
               <div className="border-2 rounded-lg border-gray-300 p-4 w-full">
                 <div className="text-2xl">
@@ -133,13 +160,15 @@ const Round3 = () => {
                   size="large"
                 />
 
-                <Button
-                  onClick={handleCheckAnswerQuestion}
-                  disabled={currentQuestion?.isAnswered}
-                  icon={<IconCheck />}
-                  size="large"
-                  className="!text-green-500 !border-green-500"
-                />
+                {isStarted && (
+                  <Button
+                    onClick={handleCheckAnswerQuestion}
+                    disabled={currentQuestion?.isAnswered}
+                    icon={<IconCheck />}
+                    size="large"
+                    className="!text-green-500 !border-green-500"
+                  />
+                )}
 
                 <div>
                   <Button

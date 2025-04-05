@@ -95,7 +95,7 @@
         },
         {
           "id": 8,
-          "question": "Mùa PS có mấy tuần?",
+          "question": "Mùa Phục Sinh có mấy tuần?",
           "isAnswer": false
         },
         {
@@ -125,7 +125,7 @@
         },
         {
           "id": 3,
-          "question": "Mùa Phục sinh, trong thánh lễ sẽ đọc kinh gì thay cho kinh Truyền tin?",
+          "question": "Mùa Phục sinh, trong Thánh Lễ sẽ đọc kinh gì thay cho kinh Truyền tin?",
           "isAnswer": false
         },
         {
@@ -170,7 +170,7 @@
       "initQuestions": [
         {
           "id": 1,
-          "question": "Chúa Giesu ở lại với các tông đồ bao nhiêu ngày thì Ngài lêm trời?",
+          "question": "Chúa Giesu ở lại với các tông đồ bao nhiêu ngày thì Ngài lên trời?",
           "isAnswer": false
         },
         {

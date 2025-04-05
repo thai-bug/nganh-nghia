@@ -145,7 +145,7 @@ export const Round1 = () => {
                   </button>
                 </div>
               )}
-            {currentIndex === hashtags.length - 1 && !showResult && (
+            {!showResult && (
               <div className="text-center">
                 <button
                   onClick={() => setShowResult(true)}

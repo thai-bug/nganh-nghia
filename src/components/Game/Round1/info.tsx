@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { info } from "@/data/round2.json";
+import { info } from "@/data/round1.json";
 
 const Round1Info = () => {
   return (
@@ -35,7 +35,7 @@ const Round1Info = () => {
             }}
             className="inline-block px-6 py-3 text-white font-bold bg-green-500 rounded-xl hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 transition-all duration-200 shadow-lg hover:shadow-xl no-underline "
           >
-            Tiền vào vòng đấu
+            Tiến vào vòng đấu
           </Link>
         </div>
       </div>

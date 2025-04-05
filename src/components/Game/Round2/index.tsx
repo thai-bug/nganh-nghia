@@ -28,12 +28,12 @@ export const Round2 = () => {
   return (
     <>
       <div className="text-2xl text-center">
-        Câu hỏi vòng đấu: <br />
+        Câu hỏi vòng đấu: <span className="text-lg ">(40 điểm)</span>
+        <br />
         <span className="font-bold  italic text-4xl">
-          Đây là nội dung của Năm Thánh 2025
+          Đây là nội dung của Năm Thánh 2025{" "}
         </span>
         <br />
-        40 điểm
       </div>
       <div className="flex justify-center mt-8">
         <div>
