@@ -14,8 +14,17 @@ export const Timer = ({ duration, paused }: any) => {
       setProgress(Math.max(newProgress, 0));
     }, 100);
 
-    return () => clearInterval(interval);
+    return () => {
+      console.log("jaosjf");
+      clearInterval(interval);
+    };
   }, [duration, paused]);
+
+  // useEffect(() => {
+  //   if (isReset) {
+  //     setProgress(100);
+  //   }
+  // }, [isReset]);
 
   return (
     <div className="h-2 bg-gray-200 rounded mx-auto w-1/2 mb-8">

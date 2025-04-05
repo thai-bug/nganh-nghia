@@ -1,26 +1,34 @@
 [
   {
+    "id": 1,
     "name": "Ephraim",
     "slogan": "Thịnh vượng",
     "points": 0,
-    "starOfHope": true
+    "starOfHope": true,
+    "image": "/ephraim.png"
   },
   {
+    "id": 2,
     "name": "Giuda",
     "slogan": "Tiên phong",
     "points": 0,
-    "starOfHope": true
+    "starOfHope": true,
+    "image": "/giuda.png"
   },
   {
+    "id": 3,
     "name": "Benjamin",
     "slogan": "Dũng cảm",
     "points": 0,
-    "starOfHope": true
+    "starOfHope": true,
+    "image": "/benjamin.png"
   },
   {
+    "id": 4,
     "name": "Semeon",
     "slogan": "Công lý",
     "points": 0,
-    "starOfHope": true
+    "starOfHope": true,
+    "image": "/simeon.png"
   }
 ]

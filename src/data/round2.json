@@ -1,0 +1,78 @@
+{
+  "initQuestions": [
+    {
+      "id": 1,
+      "keys": "       25NAM       ",
+      "question": "Năm Thánh thường niên diễn ra bao nhiêu năm một lần?",
+      "isShow": false
+    },
+    {
+      "id": 2,
+      "keys": "   DGHBONIFACEⅧ    ",
+      "question": "Năm Thánh Kitô giáo đầu tiên được công bố bởi ĐGH nào ?",
+      "isShow": false
+    },
+    {
+      "id": 3,
+      "isShow": false,
+      "keys": "      LUCE         ",
+      "question": "Nhân vật biểu tượng Năm Thánh 2025 tên là gì?"
+    },
+    {
+      "id": 4,
+      "isShow": false,
+      "keys": "       NAMMAU      ",
+      "question": "Logo năm Thánh có bao nhiêu màu ?"
+    },
+    {
+      "id": 5,
+      "isShow": false,
+      "keys": "      HANHHUONG    ",
+      "question": " Điều gì căn bản thuộc về Năm Thánh?"
+    },
+    {
+      "id": 6,
+      "isShow": false,
+      "keys": "    DUCCAY         ",
+      "question": " Năm Thánh nêu bật nên nhân đức đối Thần nào ?"
+    },
+    {
+      "id": 7,
+      "isShow": false,
+      "keys": "         VIENGTHAM ",
+      "question": "Ơn toàn xá trong năm thánh 2025 cụ thể được ban nếu ta làm việc gì ?"
+    },
+
+    {
+      "id": 8,
+      "isShow": false,
+      "keys": "BACAISAMHOI        ",
+      "question": "Ơn toàn xá trong năm thánh 2025 cụ thể được ban nếu ta làm việc gì?"
+    },
+    {
+      "id": 9,
+      "isShow": false,
+      "keys": "  CHUAHIENLINH     ",
+      "question": "Năm thánh 2025 sẽ được kết thúc chính thức vào ngày lễ nào?"
+    },
+    {
+      "id": 11,
+      "isShow": false,
+      "keys": "      LONGTHUONGXOT",
+      "question": "Ý nghĩa sâu xa nhất của Năm Thánh 2025 với chủ đề Hy vọng, trông cậy dựa trên kinh nghiệm gì?"
+    }
+  ],
+  "info": {
+    "rules": [
+      "Có 10 câu hỏi trong vòng đấu",
+      "Mỗi câu hỏi là 1 hàng ngang",
+      "Lần lượt mỗi đội sẽ chọn 1 câu hỏi khi đến lượt",
+      "Khi trả lời đúng, hàng ngang sẽ hiện chữ",
+      "Nếu đội trả lời sai, đội khác sẽ được quyền giành trả lời câu hỏi",
+      "Có một hàng dọc chứa từ khóa của vòng đấu, đội nào trả lời được sẽ giành được điểm của vòng đấu",
+      "Mỗi câu hỏi có 20 giây để trả lời bao gồm thời gian đọc câu hỏi",
+      "Sau khi hết thời gian, các đội khác có thể giành quyền trả lời"
+    ],
+    "name": "Ô chữ hy vọng"
+  }
+}

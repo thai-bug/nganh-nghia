@@ -11,14 +11,28 @@
 // Import Routes
 
 import { Route as rootRoute } from './routes/__root'
-import { Route as Game1Import } from './routes/game1'
+import { Route as Round3Import } from './routes/round3'
+import { Route as Round2Import } from './routes/round2'
+import { Route as Round1Import } from './routes/round1'
 import { Route as IndexImport } from './routes/index'
 
 // Create/Update Routes
 
-const Game1Route = Game1Import.update({
-  id: '/game1',
-  path: '/game1',
+const Round3Route = Round3Import.update({
+  id: '/round3',
+  path: '/round3',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const Round2Route = Round2Import.update({
+  id: '/round2',
+  path: '/round2',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const Round1Route = Round1Import.update({
+  id: '/round1',
+  path: '/round1',
   getParentRoute: () => rootRoute,
 } as any)
 
@@ -39,11 +53,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexImport
       parentRoute: typeof rootRoute
     }
-    '/game1': {
-      id: '/game1'
-      path: '/game1'
-      fullPath: '/game1'
-      preLoaderRoute: typeof Game1Import
+    '/round1': {
+      id: '/round1'
+      path: '/round1'
+      fullPath: '/round1'
+      preLoaderRoute: typeof Round1Import
+      parentRoute: typeof rootRoute
+    }
+    '/round2': {
+      id: '/round2'
+      path: '/round2'
+      fullPath: '/round2'
+      preLoaderRoute: typeof Round2Import
+      parentRoute: typeof rootRoute
+    }
+    '/round3': {
+      id: '/round3'
+      path: '/round3'
+      fullPath: '/round3'
+      preLoaderRoute: typeof Round3Import
       parentRoute: typeof rootRoute
     }
   }
@@ -53,37 +81,47 @@ declare module '@tanstack/react-router' {
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
-  '/game1': typeof Game1Route
+  '/round1': typeof Round1Route
+  '/round2': typeof Round2Route
+  '/round3': typeof Round3Route
 }
 
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
-  '/game1': typeof Game1Route
+  '/round1': typeof Round1Route
+  '/round2': typeof Round2Route
+  '/round3': typeof Round3Route
 }
 
 export interface FileRoutesById {
   __root__: typeof rootRoute
   '/': typeof IndexRoute
-  '/game1': typeof Game1Route
+  '/round1': typeof Round1Route
+  '/round2': typeof Round2Route
+  '/round3': typeof Round3Route
 }
 
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/game1'
+  fullPaths: '/' | '/round1' | '/round2' | '/round3'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/game1'
-  id: '__root__' | '/' | '/game1'
+  to: '/' | '/round1' | '/round2' | '/round3'
+  id: '__root__' | '/' | '/round1' | '/round2' | '/round3'
   fileRoutesById: FileRoutesById
 }
 
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
-  Game1Route: typeof Game1Route
+  Round1Route: typeof Round1Route
+  Round2Route: typeof Round2Route
+  Round3Route: typeof Round3Route
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
-  Game1Route: Game1Route,
+  Round1Route: Round1Route,
+  Round2Route: Round2Route,
+  Round3Route: Round3Route,
 }
 
 export const routeTree = rootRoute
@@ -97,14 +135,22 @@ export const routeTree = rootRoute
       "filePath": "__root.tsx",
       "children": [
         "/",
-        "/game1"
+        "/round1",
+        "/round2",
+        "/round3"
       ]
     },
     "/": {
       "filePath": "index.tsx"
     },
-    "/game1": {
-      "filePath": "game1.tsx"
+    "/round1": {
+      "filePath": "round1.tsx"
+    },
+    "/round2": {
+      "filePath": "round2.tsx"
+    },
+    "/round3": {
+      "filePath": "round3.tsx"
     }
   }
 }

@@ -1,0 +1,236 @@
+{
+  "initQuestionGroups": [
+    {
+      "id": 1,
+      "initQuestions": [
+        {
+          "id": 1,
+          "question": "Sau mấy ngày Chúa Giesu sống lại?",
+          "isAnswer": false
+        },
+        {
+          "id": 2,
+          "question": "Khi đứng giữa các Tông đồ, Chúa Giesu nói gì?",
+          "isAnswer": false
+        },
+        {
+          "id": 3,
+          "question": "Dấu hiệu nhận biết Chúa Giesu đã từ cõi chết sống lại?",
+          "isAnswer": false
+        },
+        {
+          "id": 4,
+          "question": "Sau khi lên trời Chúa Giesu hứa ban ai xuống cho các Tông đồ?",
+          "isAnswer": false
+        },
+        {
+          "id": 5,
+          "question": "Đây là nơi Đức Giêsu đã rời khỏi các môn đệ và được đón lên trời. (Lc 24,50)",
+          "isAnswer": false
+        },
+        {
+          "id": 6,
+          "question": "Vị tông đồ nào đã vắng mặt lần hiện ra đầu tiên của Chúa Giesu?",
+          "isAnswer": false
+        },
+        {
+          "id": 7,
+          "question": "Nếu Đức Kito không sống lại, thì đức tin của anh em trở nên trống rỗng” là câu nói của Thánh nào?",
+          "isAnswer": false
+        },
+        {
+          "id": 8,
+          "question": "Có bao nhiêu môn đệ chứng kiến việc Đức Giêsu lên trời?",
+          "isAnswer": false
+        },
+        {
+          "id": 9,
+          "question": "Mùa Phục Sinh kết thúc lễ gì?",
+          "isAnswer": false
+        },
+        {
+          "id": 10,
+          "question": "Bài Tin Mừng Chúa Nhật IV Phục sinh nói về điều gì?",
+          "isAnswer": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "initQuestions": [
+        {
+          "id": 1,
+          "question": "Ông Toma còn có tên gọi khác là gì?",
+          "isAnswer": false
+        },
+        {
+          "id": 2,
+          "question": "Lễ Phục Sinh gắn liền với ngày lễ nào của người Do Thái?",
+          "isAnswer": false
+        },
+        {
+          "id": 3,
+          "question": "Vị nào đã xin quan Philato tháo xác Chúa Giesu từ trên Cây Thánh Giá?",
+          "isAnswer": false
+        },
+        {
+          "id": 4,
+          "question": "Trước khi lên trời, Chúa Giesu đã truyền dạy điều gì cho các môn đệ?",
+          "isAnswer": false
+        },
+        {
+          "id": 5,
+          "question": "Kể tên 3 biểu tượng của mùa Phục Sinh",
+          "isAnswer": false
+        },
+        {
+          "id": 6,
+          "question": "Trên cây nến Phục Sinh có chắc mẫu tự chữ gì?",
+          "isAnswer": false
+        },
+        {
+          "id": 7,
+          "question": "Các môn đệ phải nhân danh Đức Giesu rao giảng cho muôn dân, kêu họ làm gì để được ơn tha tội?",
+          "isAnswer": false
+        },
+        {
+          "id": 8,
+          "question": "Mùa PS có mấy tuần?",
+          "isAnswer": false
+        },
+        {
+          "id": 9,
+          "question": "Chúa Nhật II Phục sinh Hội Thánh kính nhớ “Lòng Thương Xót của Chúa”, lễ này do ai thiết lập?",
+          "isAnswer": false
+        },
+        {
+          "id": 10,
+          "question": "Kể tên các mùa trong năm Phụng vụ?",
+          "isAnswer": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "initQuestions": [
+        {
+          "id": 1,
+          "question": "Từ ngôi mộ trở về, bà Maria Madalena đã gặp ai đầu tiên?",
+          "isAnswer": false
+        },
+        {
+          "id": 2,
+          "question": "Theo điều gì, Đức Giesu phải trỗi dậy từ cõi chết?",
+          "isAnswer": false
+        },
+        {
+          "id": 3,
+          "question": "Mùa Phục sinh, trong thánh lễ sẽ đọc kinh gì thay cho kinh Truyền tin?",
+          "isAnswer": false
+        },
+        {
+          "id": 4,
+          "question": "Chúa Giesu bảo ông Toma xỏ ngón tay vào đâu của Chúa Giesu?",
+          "isAnswer": false
+        },
+        {
+          "id": 5,
+          "question": "Hãy hoàn thành câu “Vì đã thấy Thầy nên anh tin. ... đã không thấy mà tin”( Ga 20,29)",
+          "isAnswer": false
+        },
+        {
+          "id": 6,
+          "question": "Chúa Giesu đã hứa ở với các môn đệ đến khi nào?",
+          "isAnswer": false
+        },
+        {
+          "id": 7,
+          "question": "Các môn đệ phải nhân danh Đức Giesu rao giảng cho muôn dân, kêu họ làm gì để được ơn tha tội?",
+          "isAnswer": false
+        },
+        {
+          "id": 8,
+          "question": "Lễ vọng Phục sinh có phải lễ buộc không?",
+          "isAnswer": false
+        },
+        {
+          "id": 9,
+          "question": "Các Chúa nhật Phục Sinh có được cử hành Thánh lễ an táng, hôn phối hoặc các lễ khác không?",
+          "isAnswer": false
+        },
+        {
+          "id": 10,
+          "question": "Chúa Giesu lên trời sau bao nhiêu ngày Chúa Thánh Thần hiện xuống?",
+          "isAnswer": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "initQuestions": [
+        {
+          "id": 1,
+          "question": "Chúa Giesu ở lại với các tông đồ bao nhiêu ngày thì Ngài lêm trời?",
+          "isAnswer": false
+        },
+        {
+          "id": 2,
+          "question": "Alleluia có nghĩa là gì?",
+          "isAnswer": false
+        },
+        {
+          "id": 3,
+          "question": "Chúa Giesu đã đi trên đường gì cùng với 2 môn đệ?",
+          "isAnswer": false
+        },
+        {
+          "id": 4,
+          "question": "Theo Kinh Thánh, ai phải trỗi dậy từ cõi chết?",
+          "isAnswer": false
+        },
+        {
+          "id": 5,
+          "question": "Như ai đã sai thầy, thì Thầy cũng sai anh em?",
+          "isAnswer": false
+        },
+        {
+          "id": 6,
+          "question": "Chúa Giesu sống lại vào ngày thứ mấy trong tuần?",
+          "isAnswer": false
+        },
+        {
+          "id": 7,
+          "question": "Ai cùng với ông Phero chạy ra mộ Đức Giesu?",
+          "isAnswer": false
+        },
+        {
+          "id": 8,
+          "question": "Ngày lễ quan trọng nhất trong phụng vụ là lễ gì?",
+          "isAnswer": false
+        },
+        {
+          "id": 9,
+          "question": "Vị tông đồ nào đã được chọn để thay ông Giuda Itcariot?",
+          "isAnswer": false
+        },
+        {
+          "id": 10,
+          "question": "Hội Thánh có mấy đặc tính?",
+          "isAnswer": false
+        }
+      ]
+    }
+  ],
+  "info": {
+    "rules": [
+      "Mỗi đội có 10 câu hỏi",
+      "Mỗi đội sẽ chọn gói câu hỏi để trả lời",
+      "Có 3 gói câu hỏi: 60 giây, 80 giây, 100 giây",
+      "Tương ứng với số điểm: 100, 80, 60",
+      "Mỗi đội sẽ được chọn Ngôi Sao Hy Vọng",
+      "Với Ngôi sao hy vọng, nếu trả lời trên 50% số câu hỏi trả lời đúng, đội sẽ được nhân đôi điểm của các câu hỏi đó",
+      "Với Ngôi sao hy vọng, đội không trả lời đủ 50% số câu hỏi, đội sẽ bị trừ số điểm từ các câu hỏi chưa được trả lời chính xác"
+    ],
+    "name": "Sắp tới rồi! Sắp tới rồi!"
+  }
+}
