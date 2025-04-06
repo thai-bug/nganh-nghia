@@ -4,8 +4,8 @@ import { info } from "@/data/round1.json";
 const Round1Info = () => {
   return (
     <div className="grid place-items-center my-8">
-      <div className=" bg-gradient-to-b from-gray-100 to-gray-200 p-4 rounded-3xl h-[65vh] ">
-        <div className="flex justify-between gap-8 items-center h-[55vh]">
+      <div className=" bg-gradient-to-b from-gray-100 to-gray-200 p-4 rounded-3xl h-[70vh] ">
+        <div className="flex justify-between gap-8 items-center h-[65vh]">
           <div className="w-1/3">
             <div className="font-semibold text-xl text-center ">
               Vòng đấu số 1
